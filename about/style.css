@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section{
+	padding: 80px;
+}
+
+.banner{
+	position: relative;
+	min-height: 50vh;
+	background-position: right;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(../img/banner.jpg);
+}
+
+.banner h2{
+	font-size: 50px;
+	font-weight: 1000;
+	color: #fff;
+}
+
+header 
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	color: #000;
+	width: 100%;
+	padding: 40px 70px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: .5s;
+}
+
+header .logo{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+header ul{
+	display: flex;
+	position: relative;
+}
+
+header ul li{
+	list-style: none;
+	position: relative;
+}
+
+header ul li a{
+	position: relative;
+	margin: 0 15px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sticky{
+	padding: 20px 60px ;
+ 	background: #fff;
+ 	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sticky .logo{
+	color: #111;
+}
+
+.sticky ul li a{
+	color: #111;
+}
+
+header ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	background: #2945e3;
+	transition: 0.5s;
+}
+
+header ul li:hover::after{
+	width: 60%;
+}
+
+.header{
+	text-align: center;
+	margin-bottom:30px;
+	width: 100%;
+	color: #000;
+}
+
+.header h4{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.w50{
+	width: 50%;
+}
+
+.w50 img{
+	width: 100%;
+}
+
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contentBx {
+	width: 50%;
+	padding-right: 70px;
+}
+
+.service{
+	background: #111;
+}
+
+.service .white{
+	color: #fff;
+}
+
+.service .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.service .content .serviceBx{
+	color: #fff;
+	background: #222;
+	padding: 40px 20px;
+	max-width: 340px;
+	margin: 20px;
+	text-align: center;
+	transition: .5s;
+}
+
+.service .content .serviceBx:hover{
+	background: #2196f3;
+}
+
+.service .content .serviceBx img{
+	max-width: 80px;
+	filter: invert(1);
+}
+
+.service .content .serviceBx h4{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.skill-bar{
+	width: 600px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 25px 30px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-bar .bar{
+	margin: 20px 0;
+}
+
+.skill-bar .bar:first-child{
+	margin-top: 0;
+}
+
+.skill-bar .bar .info span{
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.skill-bar .bar .progres-line{
+	position: relative;
+	height: 10px;
+	width: 100%;
+	border-radius: 10px;
+	background: #f0f0f0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+					  0 1px rgba(255,255,255,08);
+}
+
+.bar .progres-line span{
+	position: absolute;
+	border-radius: 10px;
+	height: 100%;
+	width: 80%;
+	background: #2196f3;
+
+}
+
+.bar .progres-line span::before{
+	position: absolute;
+	content: "";
+	right: 0;
+	top: -10px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color:#000 ;
+}
+
+.bar .progres-line span::after{
+	position: absolute;
+	right: 0;
+	top: -25px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	background: #000;
+	padding: 1px 8px;
+	border-radius: 3px;
+}
+
+.bar .progres-line.html span::after{
+	content: "85%";
+}
+
+.bar .progres-line.css span::after{
+	content: "90%";
+}
+.bar .progres-line.php span::after{
+	content: "55%";
+}
+.bar .progres-line.java span::after{
+	content: "70%";
+}
+.bar .progres-line.dart span::after{
+	content: "15%";
+}
+.bar .progres-line.js span::after{
+	content: "40%";
+}
+
+.bar .progres-line.html span{
+	width: 85%;
+}
+
+.bar .progres-line.css span{
+	width: 90%;
+}
+.bar .progres-line.php span{
+	width: 55%;
+}
+.bar .progres-line.java span{
+	width: 70%;
+}
+.bar .progres-line.dart span{
+	width: 15%;
+}
+
+.bar .progres-line.js span{
+	width: 40%;
+}
+
+.skill{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.copyright{
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	background-color: #626566;
+	color: #fff;
+}
+
+.contentBx p span{
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+

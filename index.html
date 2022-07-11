@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>My website</title>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Ega Sepyana</a>
+		<div class="toogle"></div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="about/index.html">About</a></li>
+			<li><a href="contact/index.html">Contact</a></li>
+			<li><a href="galery/index.html">Gelery</a></li>
+		</ul>
+	</header>
+	<section class="banner">
+		<div class="textBx">
+			<h2>Hello Saya <br><span>Ega Sepyana</span></h2>
+			<h3>Saya Seorang <span class="auto-input"></span></h3>
+			<a href="about/index.html" class="btn">About Me</a>
+		</div>
+	</section>
+	<section class="about">
+		<div class="heading">
+			<h2>About Me</h2>
+		</div>
+		<div class="content">
+			<div class="contentBx w50">
+				<h3>Saya Seorang Pelajar</h3>
+				<p><span>HALO</span>
+				Nama Saya Ega Sepyana Saya Adalah Seorang Pelajar Di Smkn 4 Padalarang
+				Saya Sangat suka sekali Membaut Website Seperti ini, Cita Cita Saya Menjadi
+				Seorang Game Developer atau Web full-Stack Developer Untuk Meraih Itu Saya Sering Belajar Di luar Pelajaran Sekolah
+				untuk Mencapai Cita Cita itu, Dan untuk Kedepannya Mungkin Saya Akan Mengasah Skill Saya Di Bagian
+				Front End Web Developer<br><br>
+
+				Alasan Saya Ingin Menjadi Game Developer Karena Kecintaan Saya Terhadap Game
+				Sangat tinggi dan itu menjadi dasar saya ingin membuat game sendiri,
+				Saya Juga Berniat untuk Membuat Mobile App Untuk mencakup Lebih Banyak Konsumen.
+				itu Saja Tentang Saya Jika Anda ingin Kenal Saya Lebih Lanjut Anda Bisa Mengunjungi halaman contact Untuk
+				Mengetahui Lebih Lanjut Tentang Saya.
+	 			</p>
+			</div>
+			<div class="w50">
+				<img src="img/img1.jpg" class="img">
+			</div>
+		</div>
+	</section>
+
+	<section class="work">
+		<div class="heading">
+			<h2>Wy Latest Work</h2>
+			<p>Beberapa Website Yang Sudah Saya Buat</p>
+		</div>
+		<div class="content">
+			<div class="workBx">
+				<img src="img/web1.png">
+			</div>
+			<div class="workBx">
+				<img src="img/web2.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="copyright">
+		<p>Copyright 2022 <i class="fa fa-copyright"></i> @egasepyana04 <br> Made With <i class="fa fa-heart-o"></i> Ega Sepyana </p>
+	</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script type="text/javascript">
+		
+		var typed = new Typed(".auto-input",{
+		strings: ["Pelajar", "Front end Developer",],
+		typeSpeed: 100,
+		backSpeed: 200,
+		loop: true
+	});
+		
+		window.addEventListener('scroll', function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		});
+	</script>
+</body>
+</html>
